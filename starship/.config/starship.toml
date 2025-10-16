@@ -1,0 +1,188 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$username\
+$directory\
+$git_branch\
+$git_status\
+$fill\
+$c\
+$elixir\
+$elm\
+$golang\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+$scala\
+$conda\
+$python\
+$cmd_duration\
+$time\
+$status\n \
+$character
+"""
+
+palette = "rose-pine"
+
+add_newline = false
+
+continuation_prompt = "[>> ](iris)"
+
+[status]
+format = '[\[$symbol$common_meaning$signal_name$maybe_int\]]($style)'
+disabled = false
+symbol = '✘ '
+success_symbol = '✓'
+success_style = "fg:foam"
+
+[cmd_duration]
+format = "[ $duration]($style)"
+min_time = 1_000
+
+[character]
+success_symbol = '[](bold fg:iris)'
+error_symbol = "[](bold fg:iris)"
+vicmd_symbol = "[𝑽](bold fg:iris)"
+
+[palettes.rose-pine]
+overlay = '#26233a'
+love = '#eb6f92'
+gold = '#f6c177'
+rose = '#ebbcba'
+pine = '#31748f'
+foam = '#9ccfd8'
+iris = '#c4a7e7'
+
+[directory]
+format = "[$path]($style)"
+style = "fg:pine"
+truncation_length = 0
+truncation_symbol = "…/"
+truncate_to_repo = false
+
+[directory.substitutions]
+Documents = "󰈙"
+Downloads = " "
+Music = " "
+Pictures = " "
+
+[fill]
+style = "fg:overlay"
+symbol = " "
+
+[git_branch]
+format = "[ $symbol $branch ]($style)"
+style = "fg:foam"
+symbol = ""
+
+[git_status]
+disabled = false
+style = "fg:love"
+format = '([$all_status$ahead_behind]($style)) '
+up_to_date = '[ ✓ ](fg:iris)'
+untracked = '[?\($count\)](fg:gold)'
+stashed = '[\$](fg:iris)'
+modified = '[!\($count\)](fg:gold)'
+renamed = '[»\($count\)](fg:iris)'
+deleted = '[✘\($count\)](style)'
+staged = '[++\($count\)](fg:gold)'
+ahead = '[⇡\(${count}\)](fg:foam)'
+diverged = '⇕[\[](fg:iris)[⇡\(${ahead_count}\)](fg:foam)[⇣\(${behind_count}\)](fg:rose)[\]](fg:iris)'
+behind = '[⇣\(${count}\)](fg:rose)'
+
+[time]
+disabled = false
+format = "[ $time ]($style)"
+style = "fg:rose"
+time_format = "%I:%M%P"
+use_12hr = true
+
+[username]
+disabled = false
+format = "[ 󰧱 $user ]($style)"
+show_always = true
+style_root = "fg:iris"
+style_user = "fg:iris"
+
+# Languages
+
+[c]
+style = "fg:pine"
+format = "[ $symbol$version ]($style)"
+disabled = false
+symbol = " "
+
+[elixir]
+style = "fg:pine"
+format = "[ $symbol$version ]($style)"
+disabled = false
+symbol = " "
+
+[elm]
+style = "fg:pine"
+format = "[ $symbol$version ]($style)"
+disabled = false
+symbol = " "
+
+[golang]
+style = "fg:pine"
+format = "[ $symbol$version ]($style)"
+disabled = false
+symbol = " "
+
+[haskell]
+style = "fg:pine"
+format = "[ $symbol$version ]($style)"
+disabled = false
+symbol = " "
+
+[java]
+style = "fg:pine"
+format = "[ $symbol$version ]($style)"
+disabled = false
+symbol = " "
+
+[julia]
+style = "fg:pine"
+format = "[ $symbol$version ]($style)"
+disabled = false
+symbol = " "
+
+[nodejs]
+style = "fg:pine"
+format = "[ $symbol$version ]($style)"
+disabled = false
+symbol = "󰎙 "
+
+[nim]
+style = "fg:pine"
+format = "[ $symbol$version ]($style)"
+disabled = false
+symbol = "󰆥 "
+
+[rust]
+style = "fg:pine"
+format = "[ $symbol$version ]($style)"
+disabled = false
+symbol = " "
+
+[scala]
+style = "fg:pine"
+format = "[ $symbol$version ]($style)"
+disabled = false
+symbol = " "
+
+[python]
+style = "fg:pine"
+format = "[ $symbol$version ]($style)"
+disabled = false
+symbol = ' '
+
+[conda]
+style = "fg:pine"
+format = "[ $symbol$environment ]($style)"
+disabled = false
+symbol = '🅒 '
