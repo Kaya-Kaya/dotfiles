@@ -32,9 +32,6 @@ vim.lsp.enable({
     'texlab',
     'hls',
     'glsl_analyzer',
-    'kotlin_language_server'
+    'kotlin_language_server',
+    'nixd'
 })
-
--- local cmp = require("cmp")
--- local cmp_select = { behavior = cmp.SelectBehavior.Select }
--- local cmp_mappings = lsp.
