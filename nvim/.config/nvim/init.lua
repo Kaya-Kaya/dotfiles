@@ -17,6 +17,8 @@ vim.opt.expandtab = true
 -- Fixed column size of 1 for errors
 vim.opt.signcolumn = "yes:1"
 
+vim.opt.conceallevel = 2
+
 vim.lsp.enable({
     'lua_ls',
     'eslint',

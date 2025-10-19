@@ -11,5 +11,5 @@ return {
     -- Make Ctrl-A (Cmd-S) saving update the pdf
     vim.keymap.set("n", "<C-a>", vim.cmd.w);
     vim.keymap.set("i", "<C-a>", vim.cmd.w);
-  end
+  end,
 }
