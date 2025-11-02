@@ -30,6 +30,7 @@ palette = "rose-pine"
 add_newline = false
 
 continuation_prompt = "[>> ](iris)"
+command_timeout = 1000
 
 [status]
 format = '[\[$symbol$common_meaning$signal_name$maybe_int\]]($style)'
