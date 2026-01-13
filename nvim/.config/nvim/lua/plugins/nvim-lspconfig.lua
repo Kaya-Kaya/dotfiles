@@ -53,11 +53,6 @@ return {
                             Lua = {}
                         }
                     },
-                    rust_analyzer = {
-                        settings = {
-                            ['rust-analyzer'] = {}
-                        }
-                    }
                 }
             },
             config = function(_, opts)
