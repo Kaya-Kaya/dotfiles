@@ -14,5 +14,8 @@ return {
         vim.keymap.set("n", "<leader>ca", function()
             vim.cmd.CompetiTest("add_testcase")
         end)
+        vim.keymap.set("n", "<leader>crt", function ()
+            vim.cmd.CompetiTest("receive testcases")
+        end)
     end,
 }

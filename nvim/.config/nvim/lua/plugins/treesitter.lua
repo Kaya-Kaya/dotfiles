@@ -30,7 +30,8 @@ return {
                 "cmake",
                 "regex",
                 "bash",
-                "nix"
+                "nix",
+                "asm"
             }
         }
     }
