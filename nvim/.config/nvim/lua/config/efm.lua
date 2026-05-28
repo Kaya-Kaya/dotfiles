@@ -5,7 +5,7 @@ vim.lsp.config('efm', {
         languages = {
             sh = {
                 {lintCommand = "shellcheck ${INPUT}"}
-            }
+            },
         }
     }
 })

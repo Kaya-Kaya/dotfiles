@@ -36,5 +36,6 @@ vim.lsp.enable({
     'glsl_analyzer',
     'kotlin_language_server',
     'nixd',
-    'asm_lsp'
+    'asm_lsp',
+    'cssls',
 })
