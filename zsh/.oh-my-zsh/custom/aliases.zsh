@@ -17,4 +17,4 @@ alias zshconfig="nvim ~/.zshrc"
 
 alias gdiff="/opt/homebrew/bin/diff"
 
-alias ssh="screen ssh"
+alias steam="~/steam_wine.sh"

@@ -1,4 +1,4 @@
-lazy_conda_aliases=('python' 'conda', 'pip', 'huggingface-cli', 'jupyter')
+lazy_conda_aliases=('conda')
 
 load_conda() {
   for lazy_conda_alias in $lazy_conda_aliases
