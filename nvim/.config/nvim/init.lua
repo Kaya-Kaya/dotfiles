@@ -38,4 +38,13 @@ vim.lsp.enable({
     'nixd',
     'asm_lsp',
     'cssls',
+    -- 'codebook'
 })
+
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = {"*.js", "*.ts", "*.py"},
+  callback = function()
+    vim.lsp.buf.format()
+  end,
+})
+
