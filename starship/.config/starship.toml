@@ -25,12 +25,12 @@ $status\n \
 $character
 """
 
-palette = "rose-pine"
+palette = "rose-pine-moon"
 
 add_newline = false
 
 continuation_prompt = "[>> ](iris)"
-command_timeout = 1000
+command_timeout = 5000
 
 [status]
 format = '[\[$symbol$common_meaning$signal_name$maybe_int\]]($style)'
@@ -54,6 +54,15 @@ love = '#eb6f92'
 gold = '#f6c177'
 rose = '#ebbcba'
 pine = '#31748f'
+foam = '#9ccfd8'
+iris = '#c4a7e7'
+
+[palettes.rose-pine-moon]
+overlay = '#393552'
+love = '#eb6f92'
+gold = '#f6c177'
+rose = '#ea9a97'
+pine = '#3e8fb0'
 foam = '#9ccfd8'
 iris = '#c4a7e7'
 
